@@ -1,0 +1,61 @@
+#formulario{
+	display: grid;
+	grid-template-areas: 
+        "nombre introducirnombre"
+        "telefono introducirtelefono"
+		"email introduciremail"
+		"eleccion introducireleccion"
+		"actualizaciones introduciractualizaciones"
+		"comentarios comentarios"
+		"introducircomentarios introducircomentarios"
+		"enviar limpiar"
+    ;
+	grid-template-rows: auto auto auto auto auto auto 50px auto;
+    grid-template-columns: 30% 70%;
+    grid-column-gap: 5px; /*Entre Columnas dejar vacío*/
+    grid-row-gap: 5px; /*Entre Filas dejar vacío*/
+}
+
+label#nombre{
+	grid-area: nombre;
+}
+input#introducirnombre{
+	grid-area: introducirnombre;
+}
+label#telefono{
+	grid-area: telefono;
+}
+input#introducirtelefono{
+	grid-area: introducirtelefono;
+}
+label#email{
+	grid-area: email;
+}
+input#introduciremail{
+	grid-area: introduciremail;
+}
+label#eleccion{
+	grid-area: eleccion;
+}
+select#introducir{
+	grid-area: introducireleccion;
+}
+div#actualizaciones{
+	grid-area: actualizaciones;
+}
+input#introduciractualizaciones{
+	grid-area: introduciractualizaciones;
+	justify-self: start;
+}
+label#comentarios{
+	grid-area: comentarios;
+}
+textarea#introducircomentarios {
+	grid-area: introducircomentarios;
+}
+input#enviar{
+	grid-area: enviar; 
+}
+input#limpiar{
+	grid-area: limpiar; 
+}

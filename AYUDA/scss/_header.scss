@@ -1,0 +1,34 @@
+$padding-size: 0px;
+$margin-size: 0px;
+$color-bg-header: #e2dcd6;
+$color-header: darken($color-bg-header,50%);;
+$color-header-hover:rgb(36, 2, 41);
+
+nav{
+    padding: $padding-size;
+    margin: $margin-size;
+    text-align: right;
+    margin-right: 5%;
+	align-items: center;
+}
+
+ul {
+    list-style: none;
+    overflow: hidden; 
+    li {
+        float: center;
+        display: inline;
+        text-align: center;
+        a {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            display: inline-block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+            padding: 10px;
+            color: $color-header;
+            &:hover {
+                color: $color-header-hover;
+            }
+        }
+    }
+}
+

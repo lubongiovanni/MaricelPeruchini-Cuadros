@@ -1,0 +1,74 @@
+.contenedor { 
+	max-width: 90%;
+	margin: auto;
+}
+
+.contenedor__cards {
+	margin: 20px 0;
+}
+
+.card__index {
+	background-image: url("../IMG/paper.jpg");
+	background-size: cover;
+    border-radius: 15px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.card__thumbnail {
+	margin-right: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.card__img {
+	max-width: 200px;
+	max-height: 250px;
+	width: 100%;
+}
+
+.card__titulo {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	margin-bottom: 20px;
+    font-family: 'Mate SC', serif;
+}
+
+.card__titulo:hover{
+    text-decoration: underline;
+}
+.card__enlace {
+	color: #000;
+}
+
+.card__extracto {
+	line-height: 1,5;
+	color: #6D6D6D;
+	margin-bottom: 20px;
+}
+
+.cuadro{
+    max-width: 95%;
+	margin: 5% 10%;
+    border-radius: 15px;
+	padding: auto;
+	display: flex;
+    background: rgb(227, 192, 228);
+    border: 2px solid rgb(40, 5, 56);
+}
+.cuadro__texto {
+    color: #3f3c3c;
+    border-radius: 15px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 15px;
+	line-height: 1,5;
+}
+

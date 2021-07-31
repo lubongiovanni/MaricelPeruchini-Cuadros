@@ -1,0 +1,31 @@
+.titulos-index {
+    position: relative;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.titulo {
+    height: 100px;
+    font-family: 'WindSong', cursive;
+    font-size: 3.5rem;
+    color: rgb(82, 24, 24);
+}
+
+.titulosecundario {
+    height: 100px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: darken(#eac199,40%);
+    letter-spacing: 0.2em;
+    word-spacing: 0.25em;
+}
+
+.enlace-flecha {
+    justify-content: end;
+}

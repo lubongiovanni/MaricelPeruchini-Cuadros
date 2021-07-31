@@ -1,0 +1,39 @@
+.contornogral{
+	margin: 5%;
+	padding: 2%;
+	border-radius: 10px;
+	background-image: radial-gradient(circle,#d3c8c8, #b590b9); 
+	border: 2px groove white;
+}
+
+.row {
+	justify-content: center;
+}
+
+.card {
+	margin: 2rem;
+	border-radius: 15px;
+}
+
+.card img {
+	border-radius: 15px;
+	padding-top: 5%;
+}
+
+.card-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+    font-family: 'Mate SC', serif;
+}
+
+.btn {
+	align-self: center;
+	background-color: #bb7fc2;
+	border-color: #963ea0;
+	&:hover {
+		background-color: #3f0746;
+		border-color: #963ea0;
+	}
+
+}

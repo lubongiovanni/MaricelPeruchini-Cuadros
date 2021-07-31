@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url("../img/fondo-index.jpg");
+    background-size: cover;
+    min-height: 625px;
+	margin: auto;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.menu-index{
+    margin: 0 5%;
+    width: 90%;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-index {
+    margin-left: 5%;
+    text-align: left;
+    align-items: center;
+}
+
+.logo-imagen {
+    max-width: 200px; 
+    align-items: center;
+    z-index: 1;
+
+}
+
+ul {
+    .show {
+        top: 65px;
+    }
+
+}
+.boton-menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 5%;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .boton-menu {
+        display: flex;
+    }
+
+    .logo-imagen {
+        width: 180px;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background-color: black;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .titulosecundario {
+        font-size: 1rem;
+    }
+}
+
+.línea-divisoria {
+    position: relative;
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: #eac199;
+}

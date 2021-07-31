@@ -1,0 +1,310 @@
+@charset "UTF-8";
+header {
+  background-color: #e2dcd6;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+nav {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  overflow: hidden;
+}
+ul li {
+  float: center;
+  display: inline;
+  text-align: center;
+}
+ul li a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  display: inline-block;
+  /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 0px;
+  color: #6c5d4d;
+}
+ul li a:hover {
+  color: #240229;
+}
+
+footer {
+  background-color: #352f2f;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.piedepagina ul li a {
+  color: #aaa6ad;
+}
+.piedepagina ul li a:hover {
+  color: white;
+}
+
+.titulo {
+  background-color: #e5c0dc;
+  border-radius: 10px;
+  color: #210424;
+  font-family: "WindSong", cursive;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2px 2px 5px #685f67;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+}
+
+.titulosecundario {
+  color: #030325;
+  font-family: "Merienda", cursive;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contenedor {
+  max-width: 90%;
+  margin: auto;
+}
+
+.contenedor__cards {
+  margin: 20px 0;
+}
+
+.card__index {
+  background-image: url("../IMG/paper.jpg");
+  background-size: cover;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.card__thumbnail {
+  margin-right: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.card__img {
+  max-width: 200px;
+  max-height: 250px;
+  width: 100%;
+}
+
+.card__titulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-family: "Mate SC", serif;
+}
+
+.card__titulo:hover {
+  text-decoration: underline;
+}
+
+.card__enlace {
+  color: #000;
+}
+
+.card__extracto {
+  line-height: 1, 5;
+  color: #6D6D6D;
+  margin-bottom: 20px;
+}
+
+.cuadro {
+  max-width: 95%;
+  margin: 5% 10%;
+  border-radius: 15px;
+  padding: auto;
+  display: flex;
+  background: #e3c0e4;
+  border: 2px solid #280538;
+}
+
+.cuadro__texto {
+  color: #3f3c3c;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+  line-height: 1, 5;
+}
+
+#formulario {
+  display: grid;
+  grid-template-areas: "nombre introducirnombre" "telefono introducirtelefono" "email introduciremail" "eleccion introducireleccion" "actualizaciones introduciractualizaciones" "comentarios comentarios" "introducircomentarios introducircomentarios" "enviar limpiar";
+  grid-template-rows: auto auto auto auto auto auto 50px auto;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 5px;
+  /*Entre Columnas dejar vacío*/
+  grid-row-gap: 5px;
+  /*Entre Filas dejar vacío*/
+}
+
+label#nombre {
+  grid-area: nombre;
+}
+
+input#introducirnombre {
+  grid-area: introducirnombre;
+}
+
+label#telefono {
+  grid-area: telefono;
+}
+
+input#introducirtelefono {
+  grid-area: introducirtelefono;
+}
+
+label#email {
+  grid-area: email;
+}
+
+input#introduciremail {
+  grid-area: introduciremail;
+}
+
+label#eleccion {
+  grid-area: eleccion;
+}
+
+select#introducir {
+  grid-area: introducireleccion;
+}
+
+div#actualizaciones {
+  grid-area: actualizaciones;
+}
+
+input#introduciractualizaciones {
+  grid-area: introduciractualizaciones;
+  justify-self: start;
+}
+
+label#comentarios {
+  grid-area: comentarios;
+}
+
+textarea#introducircomentarios {
+  grid-area: introducircomentarios;
+}
+
+input#enviar {
+  grid-area: enviar;
+}
+
+input#limpiar {
+  grid-area: limpiar;
+}
+
+#fotos {
+  display: grid;
+  grid-template-areas: "cuadro1 cuadro2 cuadro3" "texto1 texto2 texto3";
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem) 1fr));
+  grid-column-gap: 15px;
+  /*Entre Columnas dejar vacío*/
+  grid-row-gap: 5px;
+  /*Entre Filas dejar vacío*/
+}
+
+#cuadro1 {
+  grid-area: cuadro1;
+  justify-self: center;
+}
+
+#cuadro2 {
+  grid-area: cuadro2;
+  justify-self: center;
+}
+
+#cuadro3 {
+  grid-area: cuadro3;
+  justify-self: center;
+}
+
+#texto1 {
+  grid-area: texto1;
+}
+
+#texto2 {
+  grid-area: texto2;
+}
+
+#texto3 {
+  grid-area: texto3;
+}
+
+.contornogral img:hover {
+  transform: scale(1.2, 1.2);
+  transition: 2s;
+}
+
+.card__img2 {
+  max-width: 200px;
+  max-height: 250px;
+  width: 100%;
+}
+
+.contornogral {
+  margin: 5%;
+  padding: 2%;
+  border-radius: 10px;
+  background-image: radial-gradient(circle, #d3c8c8, #b590b9);
+  border: 2px groove white;
+}
+
+.row {
+  justify-content: center;
+}
+
+.card {
+  margin: 2rem;
+  border-radius: 15px;
+}
+
+.card img {
+  border-radius: 15px;
+  padding-top: 5%;
+}
+
+.card-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Mate SC", serif;
+}
+
+.btn {
+  align-self: center;
+  background-color: #bb7fc2;
+  border-color: #963ea0;
+}
+.btn:hover {
+  background-color: #3f0746;
+  border-color: #963ea0;
+}
+
+body {
+  background: #eee7df;
+}
+
+/*# sourceMappingURL=style.css.map */

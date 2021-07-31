@@ -1,0 +1,25 @@
+footer{
+    background-color: #352f2f;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+	margin-top: 0.5rem;
+	margin-bottom: 10px; 
+}
+
+.piedepagina {
+    ul {
+        li {
+            a {
+                color: rgb(170, 166, 173);
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -1,0 +1,52 @@
+$padding-size: 0px;
+$margin-size: 0px;
+$color-bg-header:#666157;
+$color-header: darken($color-bg-header,10%);;
+$color-header-hover:#f0d3b9;
+
+.menu{
+    margin-right: 5%;
+}
+
+ul {
+    li {
+        display: inline-block;
+        background-color: #ded3bc;
+        border-radius: 15%;
+        a {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            text-decoration: none;
+            opacity: 100%;
+             /* Convertimos los elementos a en elementos bloque para manipular el padding */
+            padding: 10px;
+            margin: 5px;
+            color: $color-header;
+            &:hover {
+                color: darken($color-header-hover,40%);
+                background-color: $color-header-hover;
+                border-radius: 15%;
+                padding: 5px 10px;
+            }
+            &:active {
+                color: white;
+                background-color:darken(#e9c199,40%);
+
+            }
+        }
+    }
+}
+
+.active {
+    color: white;
+    background-color:#8d7b66;
+}
+
+
+
+.icono-menu {
+    max-width: 35px;
+    border-radius: 20%;
+    background-color: rgb(240,211,185,0.3);
+
+}
